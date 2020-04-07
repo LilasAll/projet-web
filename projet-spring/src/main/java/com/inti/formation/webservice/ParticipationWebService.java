@@ -43,7 +43,7 @@ public class ParticipationWebService {
 		return serv.findById(id);
 	}
 	
-	@RequestMapping(value="/findall", method=RequestMethod.GET)
+	@RequestMapping(value="/findAll", method=RequestMethod.GET)
 	public List<ParticipationEntity> findAll(){
 		return serv.findAll();
 	}
