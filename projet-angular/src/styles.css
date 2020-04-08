@@ -96,10 +96,17 @@
     margin: auto;
 }
 
-.wrapper {
+
+/* .wrapper {
     min-height: 100%;
     display: grid;
     grid-template-rows: auto 1fr auto;
+} */
+
+.logo-index {
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
 }
 
 
