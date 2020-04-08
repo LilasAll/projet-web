@@ -13,6 +13,11 @@ import { EditprofileComponent } from './user/editprofile/editprofile.component';
 import { AnnonceComponent } from './annonce/annonce.component';
 import { ListComponent } from './user/list/list.component';
 import { LayoutComponent } from './layout/layout.component';
+import { LoginComponent } from './login/login.component';
+import { HttpClientModule } from '@angular/common/http';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { AuthGuard } from './guards/auth.guard'; 
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'; 
 
 @NgModule({
   declarations: [
@@ -26,13 +31,17 @@ import { LayoutComponent } from './layout/layout.component';
     EditprofileComponent,
     AnnonceComponent,
     ListComponent,
-    LayoutComponent
+    LayoutComponent,
+    LoginComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,    
+    ReactiveFormsModule    
   ],
-  providers: [],
+  providers: [AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
