@@ -12,6 +12,7 @@ import { ProfileComponent } from './user/profile/profile.component';
 import { EditprofileComponent } from './user/editprofile/editprofile.component';
 import { AnnonceComponent } from './annonce/annonce.component';
 import { ListComponent } from './user/list/list.component';
+import { LayoutComponent } from './layout/layout.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ListComponent } from './user/list/list.component';
     ProfileComponent,
     EditprofileComponent,
     AnnonceComponent,
-    ListComponent
+    ListComponent,
+    LayoutComponent
   ],
   imports: [
     BrowserModule,
