@@ -12,4 +12,14 @@ export class AnnonceComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  validation="disponible";
+  cat;
+
+  accept(){
+    this.validation="acceptée";
+  }
+
+
+
+
 }
