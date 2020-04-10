@@ -1,1 +1,45 @@
-<p>signup works!</p>
+<div class="container">
+    <form id="signup" [formGroup]="form">
+      <fieldset>
+        <legend>Inscription</legend>
+        <div class="form-group">
+          <label class="col-form-label col-form-label-lg" for="inputLarge">Pseudo</label>
+          <input type="text" class="form-control" placeholder="pseudo" id="inputPseudo">
+        </div>
+        <div class="form-group">
+          <label class="col-form-label col-form-label-lg" for="exampleInputPassword1">Mot de passe</label>
+          <input type="password" class="form-control" id="password" placeholder="Password">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Confirmation du mot de passe</label>
+            <input type="password" class="form-control" id="passwordConfirm" placeholder="Password">
+        </div>
+        <div class="form-group">
+          <label class="col-form-label col-form-label-lg" for="inputLarge">Code Postal</label>
+          <input type="number" class="form-control" placeholder="59000" id="inputPostCode">
+        </div>
+        <div class="form-group">
+          <label class="col-form-label col-form-label-lg" for="exampleSelect2">Compétences / Caractéristiques</label>
+          <small id="CompetencesHelp" class="form-text text-muted">Sélectionnez les compétences qui vous correspondes</small>
+          <select multiple="" class="form-control" id="exampleSelect2">
+            <option>Jardinage</option>
+            <option>Voiture</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>...</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="col-form-label col-form-label-lg" for="inputLarge">Email</label>
+            <input type="text" class="form-control" placeholder="email@example.com" id="inputEmail">
+            <small id="emailHelp" class="form-text text-muted">Votre email ne sera révélé à d’autres utilisateurs que s’ils acceptent une de vos annonce.</small>
+        </div>
+        <div class="form-group">
+          <label class="col-form-label col-form-label-lg" for="inputLarge">Code Postal</label>
+          <input type="number" class="form-control" placeholder="Default input" id="inputPostCode">
+        </div>
+        <button type="button" class="btn btn-primary">Valider</button>
+      </fieldset>
+    </form>
+  </div>

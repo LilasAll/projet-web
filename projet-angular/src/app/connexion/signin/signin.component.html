@@ -1,1 +1,28 @@
-<p>signin works!</p>
+<div class="container">
+  <form id="signin">
+    <fieldset>
+      <legend>Connexion</legend>
+      <div class="form-group">
+        <label class="col-form-label col-form-label-lg" for="inputLarge">Pseudo</label>
+        <input type="text" class="form-control" placeholder="pseudo" id="inputPseudo">
+      </div>
+      <div class="form-group">
+        <label class="col-form-label col-form-label-lg" for="exampleInputPassword1">Mot de passe</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+      </div>
+      <button type="button" class="btn btn-primary">Connexion</button>
+    </fieldset>
+  </form>
+</div>
+
+<div class="form-group has-success">
+  <label class="form-control-label" for="inputSuccess1">Valid input</label>
+  <input type="text" value="correct value" class="form-control is-valid" id="inputValid">
+  <div class="valid-feedback">Success! You've done it.</div>
+</div>
+
+<div class="form-group has-danger">
+  <label class="form-control-label" for="inputDanger1">Invalid input</label>
+  <input type="text" value="wrong value" class="form-control is-invalid" id="inputInvalid">
+  <div class="invalid-feedback">Sorry, that username's taken. Try another?</div>
+</div>
