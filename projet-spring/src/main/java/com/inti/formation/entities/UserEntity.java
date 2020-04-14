@@ -55,6 +55,7 @@ public class UserEntity {
 		this.userId = userId;
 	}
 
+
 	public String getPseudo() {
 		return pseudo;
 	}
