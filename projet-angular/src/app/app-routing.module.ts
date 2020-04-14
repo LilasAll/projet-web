@@ -11,7 +11,7 @@ import { PageComponent } from './page/page.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'admin', component: AdminComponent },
+
   { path: 'annonces', component: AnnonceComponent },
 
   //path for authentification parts :  
@@ -19,9 +19,10 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'home', component: HomeComponent },
   { path: 'home', canActivate: [AuthGuard], component: HomeComponent },
-  { path: 'page', canActivate: [AuthGuard], component: PageComponent }
+  { path: 'page', canActivate: [AuthGuard], component: PageComponent },
 
-
+  //path dashboard admin :
+  { path: 'admin', canActivate: [AuthGuard], component: AdminComponent, data: { roles: ['ADMIN']} }
 
 ];
 

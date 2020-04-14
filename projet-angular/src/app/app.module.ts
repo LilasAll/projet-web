@@ -16,6 +16,7 @@ import { ListComponent } from './user/list/list.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { PageComponent } from './page/page.component';
+import { AuthService } from './service/auth/auth.service';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,7 @@ import { PageComponent } from './page/page.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
