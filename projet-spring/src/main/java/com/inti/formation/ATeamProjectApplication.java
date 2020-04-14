@@ -16,5 +16,4 @@ public class ATeamProjectApplication {
 		SpringApplication.run(ATeamProjectApplication.class, args);
 	}
 
-
 }
