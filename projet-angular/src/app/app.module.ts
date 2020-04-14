@@ -15,6 +15,7 @@ import { AnnonceComponent } from './annonce/annonce.component';
 import { ListComponent } from './user/list/list.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
+import { PageComponent } from './page/page.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { HomeComponent } from './home/home.component';
     AnnonceComponent,
     ListComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    PageComponent
   ],
   imports: [
     FormsModule,
