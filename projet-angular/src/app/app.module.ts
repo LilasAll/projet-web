@@ -1,7 +1,7 @@
 import { UserService } from './user.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,12 +13,14 @@ import { UserComponent } from './user/user.component';
 import { ProfileComponent } from './user/profile/profile.component';
 import { EditprofileComponent } from './user/editprofile/editprofile.component';
 import { AnnonceComponent } from './annonce/annonce.component';
-import { ListComponent } from './user/list/list.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { PageComponent } from './page/page.component';
 import { AuthService } from './service/auth/auth.service';
 import { HttpClientModule } from '@angular/common/http';
+
+import { UserLoginComponent } from './user/user-login/user-login.component';
+import { UserFormComponent } from './user/user-form/user-form.component';
 
 @NgModule({
   declarations: [
@@ -31,15 +33,17 @@ import { HttpClientModule } from '@angular/common/http';
     ProfileComponent,
     EditprofileComponent,
     AnnonceComponent,
-    ListComponent,
     LoginComponent,
     HomeComponent,
-    PageComponent
+    PageComponent,
+    UserLoginComponent,
+    UserFormComponent
   ],
   imports: [
     FormsModule,
     BrowserModule,
     AppRoutingModule,
+    ReactiveFormsModule,
     HttpClientModule
   ],
   providers: [AuthService,UserService],
