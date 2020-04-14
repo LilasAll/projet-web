@@ -1,3 +1,5 @@
+import { UserFormComponent } from './user/user-form/user-form.component';
+import { UserComponent } from './user/user.component';
 import { NgModule, Component } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AdminComponent } from './admin/admin.component';
@@ -22,7 +24,13 @@ const routes: Routes = [
   { path: 'page', canActivate: [AuthGuard], component: PageComponent },
 
   //path dashboard admin :
-  { path: 'admin', canActivate: [AuthGuard], component: AdminComponent, data: { roles: ['ADMIN']} }
+  { path: 'admin', canActivate: [AuthGuard], component: AdminComponent, data: { roles: ['ADMIN']} },
+
+  //path user add : 
+  { path: 'user', component: UserComponent, children: [
+    {path:'signup', component: UserFormComponent},
+    {path:'edit/:index', component: UserFormComponent}
+  ]}
 
 ];
 
