@@ -8,12 +8,12 @@
     <div class="collapse navbar-collapse" id="navbarColor01">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Acceuil</a>
+                <a class="nav-link" href="/home">Acceuil</a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Participer</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Voir les demandes</a>
+                    <a class="dropdown-item" href="/page">Voir les demandes</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="/annoncesForm">Poster une demande</a>
                 </div>
@@ -21,9 +21,9 @@
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Communauté</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">L'équipe du projet</a>
+                    <a class="dropdown-item" href="/other/team">L'équipe du projet</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">La communauté</a>
+                    <a class="dropdown-item" href="/other/community">La communauté</a>
                 </div>
             </li>
             <!-- dashboard admin 
@@ -31,11 +31,19 @@
                 <a class="nav-link" routerLink="/admin">Dashboard</a>
             </li>
             -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">(dé)connexion</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a routerLink="/login" class="dropdown-item">Connexion</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" (click)="logout()">Déconnexion</a>
+                </div>
+
+            </li>
 
         </ul>
         <span class="navbar-text">
-      <a routerLink="/login" class="nav-link">Se Connecter</a>
-      <a class="nav-lick" (click)="logout()">Déconnexion</a>
+           
       <!-- déconnexion -->
       
     </span>
