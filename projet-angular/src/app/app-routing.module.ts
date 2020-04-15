@@ -11,6 +11,7 @@ import { AuthGuard } from './service/auth/auth.guard';
 import { PageComponent } from './page/page.component';
 import { ProfileComponent } from './user/profile/profile.component';
 import { EditprofileComponent } from './user/editprofile/editprofile.component';
+import { AnnonceFormComponent } from './annonce/annonce-form/annonce-form.component';
 
 
 
@@ -20,6 +21,8 @@ const routes: Routes = [
   { path: '', component: HomeComponent },
 
   { path: 'annonces', component: AnnonceComponent },
+  //path for annonceform par Antoine
+  { path: 'annoncesForm', component: AnnonceFormComponent },
 
   //path for authentification parts :  
   { path: 'login', redirectTo: '/login', pathMatch: 'full' },
