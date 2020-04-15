@@ -15,6 +15,7 @@ export class AnnonceComponent implements OnInit {
   validation="disponible";
   cat;
 
+
   accept(){
     this.validation="acceptée";
   }

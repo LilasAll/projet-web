@@ -2,35 +2,36 @@ package com.inti.formation.entities;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
 
 @Entity
+@Table(name="participation_entity")
 public class ParticipationEntity {
 	
 	private long participationId;
-	private long userId;
-	private long demandId;
+	
+
+	private UserEntity user;
+	
+
+	private DemandEntity demand;
+	
 	private boolean isAccepted;
 	
-	public ParticipationEntity(long participationId, long userId, long demandId, boolean isAccepted) {
-		super();
-		this.participationId = participationId;
-		this.userId = userId;
-		this.demandId = demandId;
-		this.isAccepted = isAccepted;
-	}
+
 
 	public ParticipationEntity() {
 		super();
 	}
 
-	@Override
-	public String toString() {
-		return "ParticipationEntity [participationId=" + participationId + ", userId=" + userId + ", demandId="
-				+ demandId + ", isAccepted=" + isAccepted + "]";
-	}
+
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -42,23 +43,51 @@ public class ParticipationEntity {
 		this.participationId = participationId;
 	}
 	
-	@Column
-	public long getUserId() {
-		return userId;
+
+	@ManyToOne(fetch=FetchType.LAZY)
+	@JoinColumn(name="user_id")
+	public UserEntity getUser() {
+		return user;
 	}
 
-	public void setUserId(long userId) {
-		this.userId = userId;
+
+
+	public void setUser(UserEntity user) {
+		this.user = user;
 	}
 
-	@Column
-	public long getDemandId() {
-		return demandId;
+
+	@ManyToOne(fetch=FetchType.LAZY)
+	@JoinColumn(name="demand_id")
+	public DemandEntity getDemand() {
+		return demand;
 	}
 
-	public void setDemandId(long demandId) {
-		this.demandId = demandId;
+
+
+	public void setDemand(DemandEntity demand) {
+		this.demand = demand;
 	}
+
+
+
+	public ParticipationEntity(long participationId, UserEntity user, DemandEntity demand, boolean isAccepted) {
+		super();
+		this.participationId = participationId;
+		this.user = user;
+		this.demand = demand;
+		this.isAccepted = isAccepted;
+	}
+
+
+
+	@Override
+	public String toString() {
+		return "ParticipationEntity [participationId=" + participationId + ", user=" + user + ", demand=" + demand
+				+ ", isAccepted=" + isAccepted + "]";
+	}
+
+
 
 	@Column
 	public boolean isAccepted() {
