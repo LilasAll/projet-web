@@ -1,5 +1,5 @@
 import { ActivatedRoute, Router, Params } from '@angular/router';
-import { UserService } from './../../user.service';
+import { UserService } from './../../../service/user.service';
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 
@@ -8,6 +8,7 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
   templateUrl: './user-form.component.html',
   styleUrls: ['./user-form.component.css']
 })
+
 export class UserFormComponent implements OnInit {
 
   form: FormGroup;
