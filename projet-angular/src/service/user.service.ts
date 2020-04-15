@@ -32,4 +32,7 @@ export class UserService {
   public save(user: User) {
     return this.http.post<User>(this.URL, user);
   }
+  update(user){
+    return this.http.put(this.URL+'/update',user,{ observe: 'response'});
+    }
 }

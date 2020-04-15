@@ -1,3 +1,5 @@
+import { Router } from '@angular/router';
+import { UserService } from 'src/service/user.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +8,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./editprofile.component.css']
 })
 export class EditprofileComponent implements OnInit {
-
-  constructor() { }
+  id: any;
+  constructor(private userService: UserService, private router: Router) { }
 
   ngOnInit(): void {
   }
-
 }
