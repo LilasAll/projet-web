@@ -1,3 +1,4 @@
+
 import { UserFormComponent } from './user/user-form/user-form.component';
 import { UserComponent } from './user/user.component';
 import { NgModule, Component } from '@angular/core';
@@ -8,10 +9,14 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { AuthGuard } from './service/auth/auth.guard';
 import { PageComponent } from './page/page.component';
+import { ProfileComponent } from './user/profile/profile.component';
+import { EditprofileComponent } from './user/editprofile/editprofile.component';
+
 
 
 
 const routes: Routes = [
+
   { path: '', component: HomeComponent },
 
   { path: 'annonces', component: AnnonceComponent },
@@ -31,6 +36,11 @@ const routes: Routes = [
     {path:'signup', component: UserFormComponent},
     {path:'edit/:index', component: UserFormComponent}
   ]}
+
+  //profil user par bento
+  {path: 'editprofil', component: EditprofileComponent},
+  {path: 'profil', component: ProfileComponent},
+  {path:'annonce', component:AnnonceComponent}
 
 ];
 
