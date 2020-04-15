@@ -15,7 +15,7 @@ export class UserFormComponent implements OnInit {
   index:any;
   mode: boolean;
 
-  constructor( private UserService: UserService, private ActivatedRoute: ActivatedRoute, private router: Router) { }
+  constructor( private userService: UserService, private activatedRoute: ActivatedRoute, private router: Router) { }
   
 
   ngOnInit(): void {
@@ -28,11 +28,11 @@ export class UserFormComponent implements OnInit {
       password : new FormControl(null,Validators.required)
     })
 
-    this.ActivatedRoute.params.subscribe ((param: Params) => {
+    this.activatedRoute.params.subscribe ((param: Params) => {
       this.index = param['index'];
 
       if(this.index) {
-        this.form.setValue(this.UserService.users [this.index]);
+        this.form.setValue(this.userService.users [this.index]);
       }
     })
 
@@ -40,9 +40,10 @@ export class UserFormComponent implements OnInit {
   }
 
   addUser() {
-     
-     this.UserService.users.push(this.form.value);
-     console.log(this.UserService.users); 
-     this.router.navigate(['/home'])
-  }
+    this.userService.add(this.form.value).subscribe(response =>{
+    this.userService.users.push(response.body);
+    console.log(this.userService.users);
+    this.form.reset();
+  });
+}
 }

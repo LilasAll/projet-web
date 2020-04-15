@@ -15,7 +15,7 @@ export class UserService {
   } 
   
   add(user) {
-    return this.http.post(this.URL+'/add',user);
+    return this.http.post(this.URL+'/add',user,{observe:'response'});
   }
 
   findAll() {
