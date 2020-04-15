@@ -35,7 +35,7 @@ const routes: Routes = [
   { path: 'user', component: UserComponent, children: [
     {path:'signup', component: UserFormComponent},
     {path:'edit/:index', component: UserFormComponent}
-  ]}
+  ]},
 
   //profil user par bento
   {path: 'editprofil', component: EditprofileComponent},
