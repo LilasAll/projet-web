@@ -55,6 +55,15 @@
  * ---------------
 */
 
+.btn-annonce {
+    color: white;
+}
+
+.img-team {
+    width: 50%;
+    margin: auto;
+}
+
 .footer-bg {
     background-color: var(--primary);
     position: absolute;
