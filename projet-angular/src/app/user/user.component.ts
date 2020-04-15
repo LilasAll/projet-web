@@ -8,13 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserComponent implements OnInit {
 
-  constructor(private Router: Router) { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
 
   redirect() {
-    this.Router.navigate(['/user/form'])
+    this.router.navigate(['/user/form'])
   }
 
 }
