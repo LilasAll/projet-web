@@ -1,3 +1,6 @@
+import { CommunityComponent } from './other/community/community.component';
+import { TeamComponent } from './other/team/team.component';
+import { OtherComponent } from './other/other.component';
 
 import { UserFormComponent } from './user/user-form/user-form.component';
 import { UserComponent } from './user/user.component';
@@ -38,6 +41,12 @@ const routes: Routes = [
   { path: 'user', component: UserComponent, children: [
     {path:'signup', component: UserFormComponent},
     {path:'edit/:index', component: UserFormComponent}
+  ]},
+
+  //path pour les pages "autre" : l'équipe et la communauté
+  { path: 'other', component: OtherComponent, children: [
+    {path: 'team', component: TeamComponent},
+    {path: 'community', component: CommunityComponent}
   ]},
 
   //profil user par bento

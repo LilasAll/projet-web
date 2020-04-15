@@ -23,6 +23,9 @@ import { UserLoginComponent } from './user/user-login/user-login.component';
 import { UserFormComponent } from './user/user-form/user-form.component';
 import { AnnonceListComponent } from './annonce/annonce-list/annonce-list.component';
 import { UserService } from 'src/service/user.service';
+import { OtherComponent } from './other/other.component';
+import { TeamComponent } from './other/team/team.component';
+import { CommunityComponent } from './other/community/community.component';
 
 
 @NgModule({
@@ -42,6 +45,9 @@ import { UserService } from 'src/service/user.service';
     UserLoginComponent,
     UserFormComponent,
     AnnonceListComponent,
+    OtherComponent,
+    TeamComponent,
+    CommunityComponent,
 
   ],
   imports: [

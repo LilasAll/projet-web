@@ -1,9 +1,6 @@
-import { User } from '../app/user';
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { map } from 'rxjs/operators';
-
-
 
 @Injectable({ providedIn: 'root' })
 
@@ -29,10 +26,8 @@ export class UserService {
     return this.http.get<any>(this.URL+'/user/'+id);
   }
 
-  public save(user: User) {
-    return this.http.post<User>(this.URL, user);
-  }
   update(user){
     return this.http.put(this.URL+'/update',user,{ observe: 'response'});
     }
+  
 }
