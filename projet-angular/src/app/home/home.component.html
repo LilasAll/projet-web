@@ -5,21 +5,22 @@
     </div>
 </div>
 
+<h1>Welcome home {{getLogin()}} !</h1> 
 <div class="card border-danger mb-3 col-10 mx-auto">
     <div class="card-body">
         <h4 class="card-title text-center">Découvrir le site : </h4>
         <p class="card-text text-center">Pour avoir accès à toutes les fonctionnalités du site, veuillez vous inscrire ou vous connecter. </p>
         <div class="btn-index">
-            <a href="/singin" class="btn btn-danger btn-index btn-lg" role="button">Se connecter</a>
+            <a href="/page" class="btn btn-danger btn-index btn-lg" role="button">Se connecter</a>
             <a href="/singup" class="btn btn-danger btn-lg" role=" button">S'inscrire</a>
         </div>
         <!-- déconnexion -->
-        Welcome home {{getLogin()}} !
+        
         <a (click)="logout()">Se déconnecter</a>
         <!-- déconnexion -->
         <!-- accès page après auth -->
         <p>
-            <a routerLink="/page">Vous pouvez accèder à la page</a>
+            <a routerLink="/page">Voir les annonces</a>
         </p>
         <!-- accès page après auth -->
 

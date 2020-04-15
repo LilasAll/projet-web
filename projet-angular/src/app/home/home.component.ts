@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit {
   // Outils d'authentification 
   getLogin() {
     //return JSON.parse(localStorage.getItem('user')).login;
-    return this.authService.getUser().login;
+    return this.authService.getUser().pseudo;
   }
 
   logout() {
