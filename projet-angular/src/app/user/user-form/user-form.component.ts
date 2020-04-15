@@ -40,6 +40,7 @@ export class UserFormComponent implements OnInit {
   }
 
   addUser() {
+     
      this.UserService.users.push(this.form.value);
      console.log(this.UserService.users); 
      this.router.navigate(['/home'])

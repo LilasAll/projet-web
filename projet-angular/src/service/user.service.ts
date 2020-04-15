@@ -9,6 +9,7 @@ import { map } from 'rxjs/operators';
 
 export class UserService {
   users: any []=[];
+  editMode = false;
   
   URL = 'http://localhost:8080/apiUser';
 
@@ -23,7 +24,7 @@ export class UserService {
   findAll() {
     return this.http.get<any[]>(this.URL+'/users').pipe(map(value =>this.users=value))
   }
-  
+
   getOne(id) {
     return this.http.get<any>(this.URL+'/user/'+id);
   }
