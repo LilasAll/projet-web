@@ -6,11 +6,11 @@
                 <div class="card-header">Inscription</div>
                 <div class="card-body">
                     <div class="row">
-                        <div class="form-group col-md-6">
+                        <!-- <div class="form-group col-md-6">
                             <label for="id">ID</label>
                             <input type="text" id="id" class="form-control" formControlName="id"/>
-                            <!-- Ajouter les validations -->
-                        </div>
+                             Ajouter les validations 
+                        </div> -->
                         <div class="form-group col-md-6">
                             <label for="pseudo">Pseudo</label>
                             <input type="text" id="pseudo" class="form-control" formControlName="pseudo"/>
@@ -20,11 +20,28 @@
                             <label for="email">Email</label>
                             <input type="text" id="email" class="form-control" formControlName="email"/>
                             <!-- Ajouter les validations -->
+                            <small id="emailHelp" class="form-text text-muted">Votre email ne sera révélé à d’autres utilisateurs que s’ils acceptent une de vos annonce.</small>
                         </div>
                         <div class="form-group col-md-6">
                             <label for="password">Mot de Passe</label>
                             <input type="password" id="password" class="form-control" formControlName="password"/>
                             <!-- Ajouter les validations -->
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label class="col-form-label col-form-label-lg" for="inputLarge">Code Postal</label>
+                            <input type="number" class="form-control" placeholder="59000" id="inputPostCode">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label class="col-form-label col-form-label-lg" for="exampleSelect2">Compétences / Caractéristiques</label>
+                            <small id="CompetencesHelp" class="form-text text-muted">Sélectionnez les compétences qui vous correspondes</small>
+                            <select multiple="" class="form-control" id="exampleSelect2">
+                              <option>Jardinage</option>
+                              <option>Voiture</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                              <option>...</option>
+                            </select>
                         </div>
                     </div>
                     <div class="row">
@@ -37,3 +54,5 @@
         </form>
     </div>
 </div>
+
+
