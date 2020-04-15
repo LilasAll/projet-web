@@ -21,6 +21,9 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { UserLoginComponent } from './user/user-login/user-login.component';
 import { UserFormComponent } from './user/user-form/user-form.component';
+import { AnnonceListComponent } from './annonce/annonce-list/annonce-list.component';
+import { AnnonceFormComponent } from './annonce-form/annonce-form.component';
+import { AnnonceProfilComponent } from './annonce-profil/annonce-profil.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +40,10 @@ import { UserFormComponent } from './user/user-form/user-form.component';
     HomeComponent,
     PageComponent,
     UserLoginComponent,
-    UserFormComponent
+    UserFormComponent,
+    AnnonceListComponent,
+    AnnonceFormComponent,
+    AnnonceProfilComponent
   ],
   imports: [
     FormsModule,
