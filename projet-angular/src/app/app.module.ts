@@ -41,8 +41,7 @@ import { AnnonceListComponent } from './annonce/annonce-list/annonce-list.compon
     UserLoginComponent,
     UserFormComponent,
     AnnonceListComponent,
-    AnnonceFormComponent,
-    AnnonceProfilComponent
+
   ],
   imports: [
     FormsModule,
