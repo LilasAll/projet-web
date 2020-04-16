@@ -24,8 +24,8 @@ export class AnnonceFormComponent implements OnInit {
       id: new FormControl(null),
       title: new FormControl(null, Validators.required),
       description: new FormControl(null, Validators.required),
-      category: new FormControl(null),
-      postalCodeDeman: new FormControl(null,Validators.required)
+      category: new FormControl(null,Validators.required),
+      postalCodeDemand: new FormControl(null,Validators.required)
 
     })
 
@@ -39,7 +39,7 @@ export class AnnonceFormComponent implements OnInit {
   }
 
   addDemand(){
-    this.annonceService.add(this.form.value).subscribe( response => {
+    this.annonceService.add(this.form.value).subscribe(response => {
       this.annonceService.annonces.push(response.body);
       console.log(this.annonceService.annonces);
       this.form.reset();

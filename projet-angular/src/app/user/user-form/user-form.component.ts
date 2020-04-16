@@ -25,7 +25,8 @@ export class UserFormComponent implements OnInit {
       id : new FormControl(null),
       pseudo : new FormControl(null,Validators.required),
       email : new FormControl(null,Validators.required),
-      password : new FormControl(null,Validators.required)
+      password : new FormControl(null,Validators.required),
+      postalCodeUser : new FormControl(null, Validators.required)
     })
 
     this.activatedRoute.params.subscribe ((param: Params) => {

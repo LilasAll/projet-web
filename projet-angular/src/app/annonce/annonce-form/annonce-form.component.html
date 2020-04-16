@@ -6,12 +6,12 @@
   
         <div class="col-sm-6 titleAF" >
           <h3 class="inputLegend">Intitulé de votre annonce</h3>
-          <input type="text" class="form-control inputAF" placeholder="Mon annonce" id="nameAF">
+          <input type="text" class="form-control inputAF" placeholder="Mon annonce" id="nameAF" formControlName="title"/>
         
       </div>
       <div class="col-sm-6 titleAF" >
         <h3 class="inputLegend">Lieu (code postal)</h3>
-        <input type="text" class="form-control inputAF" placeholder="00000" id="cpAF">
+        <input type="text" class="form-control inputAF" placeholder="00000" id="cpAF" formControlName="postalCodeDemand"/>
       </div>
     </div>
   
@@ -19,12 +19,12 @@
   
       <div class="form-group titleAF1">
         <label for="exampleTextarea"><h4>Quel est le sujet de votre annonce?</h4></label>
-        <textarea class="form-control inputAF1" rows="3" id="descAF"></textarea>
+        <textarea class="form-control inputAF1" rows="3" id="descAF" formControlName="description"></textarea>
       </div>
 
       <div class="form-group titleAF1">
         <label for="exampleSelect1"><h4>Sélectionner une catégorie</h4></label>
-        <select class="form-control inputAF1"  id="catAF">
+        <select class="form-control inputAF1"  id="catAF" formControlName="category">
           <option>Shopping</option>
           <option>Cuisine</option>
           <option>Ménage</option>
@@ -33,7 +33,7 @@
         </select>
       </div>
 
-    <button type="submit" class="btn btn-primary submitAF">Poster mon annonce<br/></button>
+    <button type="submit" class="btn btn-primary submitAF" (click)="addDemand()">Poster mon annonce<br/></button>
 
   
   </fieldset>
