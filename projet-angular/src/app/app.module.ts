@@ -26,6 +26,10 @@ import { UserService } from 'src/service/user.service';
 import { OtherComponent } from './other/other.component';
 import { TeamComponent } from './other/team/team.component';
 import { CommunityComponent } from './other/community/community.component';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { AnnonceFormComponent } from './annonce/annonce-form/annonce-form.component';
+
+
 
 
 
@@ -49,6 +53,7 @@ import { CommunityComponent } from './other/community/community.component';
     OtherComponent,
     TeamComponent,
     CommunityComponent,
+    AnnonceFormComponent
 
 
   ],
@@ -59,6 +64,8 @@ import { CommunityComponent } from './other/community/community.component';
     ReactiveFormsModule,
     HttpClientModule
   ],
+
+
   providers: [AuthService,UserService],
   bootstrap: [AppComponent]
 })

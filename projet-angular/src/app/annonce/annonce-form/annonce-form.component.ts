@@ -3,6 +3,9 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { AnnonceService } from 'src/service/annonce.service';
 import { ActivatedRoute, Router, Params } from '@angular/router';
 import { Route } from '@angular/compiler/src/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
+
 
 @Component({
   selector: 'app-annonce-form',
