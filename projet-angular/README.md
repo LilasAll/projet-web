@@ -1,27 +1,67 @@
-# ProjetAngular
+# Projet web : entr'aide
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0.
+[![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)  [![forthebadge](http://forthebadge.com/images/badges/powered-by-electricity.svg)](http://forthebadge.com)
 
-## Development server
+Le projet à lieu dans le carde d'une formation Java/Jee. Il consiste à la création d'un site internet d'entraide basé sur le volontariat. 
+La plateforme permet de connecter entre eux des invidus dans le besoins et des individus qqui souhaitent répondre bénévolement à ce besoin.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Pour commencer
 
-## Code scaffolding
+Vous allez devoir récupérer le fichier git. Celui-ci contient le back et le front du site via un projet spring boot et un projet angular. 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Pré-requis
 
-## Build
+Vous devez possèder sur votre ordinateur : 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+- Angular 5
+- Java version 8 minimum
+- Spring
+- Un serveur type wamp server pour créer les bases de données
 
-## Running unit tests
+### Installation
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Les étapes pour installer le programme : 
 
-## Running end-to-end tests
+```bash
+$ git clone https://git@github.com:LilasAll/projet-web.git
+```
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
+## Démarrage
+### Back-end
+Il faut importer le projet-spring dans votre editeur type Eclipse et utiliser la méthode : 
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+```bash
+> run as spring boot app
+```
+
+_Attention_: Vous devez posseder et mettre en route un ``serveur`` type wamp serveur, Apache...
+
+### Front-end
+Placez-vous dans le dossier du projet-angular, puis lancez les commandes suivantes : 
+
+```bash
+$ npm install
+$ ng serve --o
+```
+
+Une fenètre va s'ouvrir avec le projet. Vous pouvez maintenant naviguer sur le site ! 
+
+## Fabriqué avec : 
+
+* [Bootswatch](https://bootswatch.com/minty/) - Thème bootstrap 
+* [AngularJS](https://angular.io/) - framework
+* [Spring](https://spring.io/) - framework
+* [Eclipse JEE](https://www.eclipse.org/downloads/packages/release/kepler/sr2/eclipse-ide-java-ee-developers) - outil de développement
+
+## Langages utilisés : 
+
+- HTML5, CSS3
+- JavaScript, TypeScrit
+- Java
+
+## Auteurs
+
+Cécile - Antoine - Benjamin - Lilas
+
+
