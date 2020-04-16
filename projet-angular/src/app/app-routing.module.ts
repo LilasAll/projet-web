@@ -1,3 +1,5 @@
+import { AnnonceProfilComponent } from './annonce/annonce-profil/annonce-profil.component';
+import { AnnonceListComponent } from './annonce/annonce-list/annonce-list.component';
 import { CommunityComponent } from './other/community/community.component';
 import { TeamComponent } from './other/team/team.component';
 import { OtherComponent } from './other/other.component';
@@ -15,7 +17,7 @@ import { PageComponent } from './page/page.component';
 import { ProfileComponent } from './user/profile/profile.component';
 import { EditprofileComponent } from './user/editprofile/editprofile.component';
 import { AnnonceFormComponent } from './annonce/annonce-form/annonce-form.component';
-import { AnnonceProfilComponent } from './annonce/annonce-profil/annonce-profil.component';
+
 
 
 
@@ -24,11 +26,12 @@ const routes: Routes = [
 
   { path: '', component: HomeComponent },
 
-  { path: 'annonces', component: AnnonceComponent },
-  //path for annonceform par Antoine
-  { path: 'annoncesForm', component: AnnonceFormComponent },
-  {path: 'annoncesProfil', component: AnnonceProfilComponent },
-
+  //path pour les annonces :
+  { path: 'annonce', component: AnnonceComponent, children : [
+    {path: 'all', component: AnnonceListComponent},
+    {path: 'id', component: AnnonceFormComponent}
+  ] },
+  
   //path for authentification parts :  
   { path: 'login', redirectTo: '/login', pathMatch: 'full' },
   { path: 'login', component: LoginComponent },
@@ -55,6 +58,8 @@ const routes: Routes = [
   {path: 'editprofil', component: EditprofileComponent},
   {path: 'profil', component: ProfileComponent},
   {path:'annonce', component:AnnonceComponent}
+
+  
 
 ];
 

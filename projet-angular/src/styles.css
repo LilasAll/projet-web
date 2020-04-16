@@ -54,6 +54,27 @@
  * Custom CSS
  * ---------------
 */
+.annonce-cards {
+    padding: 20px;
+    margin: auto;
+
+}
+
+
+
+.annonce-title {
+    
+    margin: auto;
+    text-align: center;
+    padding: 50px;
+}
+
+.annonce-hr {
+    border: 1.5px solid var(--secondary);
+    width: 80%;
+    display: flex;
+    margin: auto;
+}
 
 .btn-annonce {
     color: white;
