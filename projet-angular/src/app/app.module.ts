@@ -28,6 +28,7 @@ import { TeamComponent } from './other/team/team.component';
 import { CommunityComponent } from './other/community/community.component';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { AnnonceFormComponent } from './annonce/annonce-form/annonce-form.component';
+import { AnnonceProfilComponent } from './annonce/annonce-profil/annonce-profil.component';
 
 
 
@@ -53,7 +54,8 @@ import { AnnonceFormComponent } from './annonce/annonce-form/annonce-form.compon
     OtherComponent,
     TeamComponent,
     CommunityComponent,
-    AnnonceFormComponent
+    AnnonceFormComponent,
+    AnnonceProfilComponent
 
 
   ],

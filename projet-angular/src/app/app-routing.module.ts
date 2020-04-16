@@ -15,6 +15,7 @@ import { PageComponent } from './page/page.component';
 import { ProfileComponent } from './user/profile/profile.component';
 import { EditprofileComponent } from './user/editprofile/editprofile.component';
 import { AnnonceFormComponent } from './annonce/annonce-form/annonce-form.component';
+import { AnnonceProfilComponent } from './annonce/annonce-profil/annonce-profil.component';
 
 
 
@@ -26,6 +27,7 @@ const routes: Routes = [
   { path: 'annonces', component: AnnonceComponent },
   //path for annonceform par Antoine
   { path: 'annoncesForm', component: AnnonceFormComponent },
+  {path: 'annoncesProfil', component: AnnonceProfilComponent },
 
   //path for authentification parts :  
   { path: 'login', redirectTo: '/login', pathMatch: 'full' },
