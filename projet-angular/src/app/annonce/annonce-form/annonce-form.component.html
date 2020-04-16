@@ -1,19 +1,18 @@
-
-<form>
+<form [formGroup]="form">
     <fieldset>
       <h1 id="pageTitleAF"><br/>Créer une annonce<br/><br/></h1>
-      <div class="form-group row">
-  
-        <div class="col-sm-6 titleAF" >
+      
+      
+        <div class="col-sm-6 titleAF form-group" >
           <h3 class="inputLegend">Intitulé de votre annonce</h3>
           <input type="text" class="form-control inputAF" placeholder="Mon annonce" id="nameAF" formControlName="title"/>
         
-      </div>
-      <div class="col-sm-6 titleAF" >
+    </div>
+      <div class="col-sm-6 titleAF form-group" >
         <h3 class="inputLegend">Lieu (code postal)</h3>
         <input type="text" class="form-control inputAF" placeholder="00000" id="cpAF" formControlName="postalCodeDemand"/>
       </div>
-    </div>
+    
   
 
   
@@ -33,7 +32,7 @@
         </select>
       </div>
 
-    <button type="submit" class="btn btn-primary submitAF" (click)="addDemand()">Poster mon annonce<br/></button>
+    <input type="submit" class="btn btn-primary submitAF" (click)="addDemand()" value="Poster mon annonce"/><br/>
 
   
   </fieldset>
