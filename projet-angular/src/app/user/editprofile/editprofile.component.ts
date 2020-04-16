@@ -23,6 +23,7 @@ export class EditprofileComponent implements OnInit {
       password : new FormControl(null,Validators.required),
       postalCodeUser : new FormControl(null, Validators.required),
       phone : new FormControl(null, Validators.required),
+      description : new FormControl(null, Validators.required)
     })
 
     this.activatedRoute.params.subscribe ((param: Params) => {

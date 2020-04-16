@@ -22,34 +22,44 @@
   </div>
 <br/>
 <br/>
-
+<div>
+  <!-- <label id="idLab">ID recherché</label>
+<input type="number" class = "form-control idIn"[(ngModel)]="id"/>
+<input type ="submit" class = "btn btn-warning" id="rech" value="Chercher ce profil" (click)="find()"/>
+</div> -->
 <div class="container" style="border: solid 1px; border-radius:25px; padding:20px; margin:20px">
- 
+
   <h3>Mes Informations</h3>
   <br/>
 <div class="row">
 <div class="col-lg-8">
   <div class="row">
     <div class="col-lg-4">
-      <p>Pseudo</p>
+      <p id="pseudo">Pseudo : {{user.pseudo}}</p>
     </div>
   </div>
   <br/>
   <div class="row">
     <div class="col-lg-4">
-      <p>Code Postal</p>
+      <p id=postalCodeUser>Coce Postal : {{user.postalCodeUser}}</p>
     </div>
   </div>
   <br/>
   <div class="row">
     <div class="col-lg-4">
-      <p>Email</p>
+      <p id="email">Email : {{user.email}}</p>
     </div>
   </div>
   <br/>
   <div class="row">
     <div class="col-lg-4">
-      <p>Téléphone</p>
+      <p id="phone">Téléphone : {{user.phone}}</p>
+    </div>
+  </div>
+  <br/>
+  <div class="row">
+    <div class="col-lg-4">
+      <p id="description">Description : {{user.description}}</p>
     </div>
   </div>
   <br/>

@@ -23,7 +23,7 @@ export class UserService {
   }
 
   getOne(id) {
-    return this.http.get<any>(this.URL+'/user/'+id);
+    return this.http.get<any>(this.URL+'/find/'+id);
   }
 
   update(user){
