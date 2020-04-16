@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-annonce',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AnnonceComponent implements OnInit {
 
-  constructor() { }
+  constructor( private router: Router) { }
 
   ngOnInit(): void {
   }
@@ -15,11 +16,13 @@ export class AnnonceComponent implements OnInit {
   validation="disponible";
   cat;
 
-
   accept(){
     this.validation="acceptée";
   }
 
+  redirect() {
+    this.router.navigate(['/demandes'])
+  }
 
 
 

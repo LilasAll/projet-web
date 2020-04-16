@@ -26,6 +26,7 @@ import { UserService } from 'src/service/user.service';
 import { OtherComponent } from './other/other.component';
 import { TeamComponent } from './other/team/team.component';
 import { CommunityComponent } from './other/community/community.component';
+import { DemandComponent } from './demand/demand.component';
 
 
 @NgModule({
@@ -48,6 +49,7 @@ import { CommunityComponent } from './other/community/community.component';
     OtherComponent,
     TeamComponent,
     CommunityComponent,
+    DemandComponent,
 
   ],
   imports: [
