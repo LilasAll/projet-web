@@ -29,7 +29,8 @@ const routes: Routes = [
   //path pour les annonces :
   { path: 'annonce', component: AnnonceComponent, children : [
     {path: 'all', component: AnnonceListComponent},
-    {path: 'id', component: AnnonceFormComponent}
+    {path: 'id', component: AnnonceFormComponent},
+    {path:'profil', component : AnnonceProfilComponent}
   ] },
   
   //path for authentification parts :  

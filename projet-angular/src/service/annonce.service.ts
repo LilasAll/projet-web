@@ -22,7 +22,7 @@ export class AnnonceService {
   }
 
   getOne(id) {
-    return this.http.get<any>(this.URL+'/demande/'+id);
+    return this.http.get<any>(this.URL+'/find/'+id);
   }
 
   update(annonce){
