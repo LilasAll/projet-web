@@ -1,6 +1,7 @@
 # Projet web : entr'aide
 
-[![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)  [![forthebadge](http://forthebadge.com/images/badges/powered-by-electricity.svg)](http://forthebadge.com)
+[![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)  [![forthebadge](http://forthebadge.com/images/badges/uses-html.svg)](http://forthebadge.com)
+
 
 Le projet à lieu dans le carde d'une formation Java/Jee. Il consiste à la création d'un site internet d'entraide basé sur le volontariat. 
 La plateforme permet de connecter entre eux des invidus dans le besoins et des individus qqui souhaitent répondre bénévolement à ce besoin.
