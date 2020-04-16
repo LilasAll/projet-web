@@ -20,12 +20,12 @@ export class UserFormComponent implements OnInit {
 
   ngOnInit(): void {
 
-
+    this.mode = this.userService.editMode;
     this.form = new FormGroup({
       id : new FormControl(null),
-      pseudo : new FormControl(null,Validators.required),
+      pseudo : new FormControl(null,[Validators.required,Validators.minLength(5), Validators.maxLength(20)]),
       email : new FormControl(null,Validators.required),
-      password : new FormControl(null,Validators.required),
+      password : new FormControl(null,[Validators.required,Validators.minLength(5), Validators.maxLength(20)]),
       postalCodeUser : new FormControl(null, Validators.required)
     })
 
