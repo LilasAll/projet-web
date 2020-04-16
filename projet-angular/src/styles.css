@@ -60,7 +60,15 @@
 
 }
 
+.annonce-form {
+    padding: 40px;
+}
 
+
+.login-form {
+    margin-left: 10%;
+    margin-top: 10%;
+}
 
 .annonce-title {
     
